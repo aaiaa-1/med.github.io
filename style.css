@@ -18,7 +18,7 @@ body{
 }
 .logo{
     display: inline-block;
-    position: fixed;
+    position: absolute;
     top: 10%;
     left: 45%;
     width: 800px;
