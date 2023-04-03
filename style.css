@@ -1,4 +1,4 @@
-*{
+body{
     margin: 0;
     padding: 0;
     background-color: #F8F7F3;
@@ -19,7 +19,7 @@
 .logo{
     display: inline-block;
     position: fixed;
-    top: 8%;
+    top: 10%;
     left: 45%;
     width: 800px;
 }
@@ -32,7 +32,9 @@
     font-weight: 700;
     color: #6c584c;
 }
-.logo h1{
+h1{
+    font-weight: 700;
+    margin-bottom: 20px;
     background: -webkit-linear-gradient(45deg,#b62129,#ffffff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -62,4 +64,20 @@
     {
         background-image: url(pics/pic6.jpeg);
     }
+}
+.btn{
+    border-color: #b73c42;
+}
+.btn:hover{
+    background-color: #b73c42;
+}
+.search-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.arbre-decisionnel{
+    background-color: #ffffff;
+    height: 500px;
 }
