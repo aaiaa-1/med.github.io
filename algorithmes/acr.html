@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styletree.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="../scripttree.js"></script>
+    <title>UCV</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mb-5" style="box-shadow: 0 2px 2px -2px rgba(0,0,0,.2) ;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img style="width:80px" src="../pics/Screenshot 2023-04-03 at 21.57.21.png">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="d-flex" role="search">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="../algorithmes.html">Algorithmes</a>
+                    </li>                  
+                </ul>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <div class="container">
+        <div class="row">  
+            <div class="col-md-2"></div>
+            <div class="col-md-6">
+                <h1 style="display: flex; justify-content: center;">Arrêt Cardio-respiratoire</h1>
+                <div class="auteur mt-4 mb-5">
+                    <h6>Auteur:</h6>
+                    <img src="../pics/chourouk.jpeg">
+                    <p>Dr. Chourouk Michta</p>
+                </div>
+                <p> <strong>L'Arrêt Cardio-Respiratoire:</strong> se définit par l'arrêt d'une activité mécanique efficace du
+                    cœur, confirmée par une absence de pouls et une apnée ou une respiration en « gasp »
+                    (=mouvement respiratoire inefficace d'origine rejlexe,phénomène terminal de l'agonie).
+                    
+                </p>
+                <div class="tree" >
+                     
+                    <div class="node node--root">
+                        
+                        <div class="node__element" >
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#1">
+                                Etat de mort apparente                               
+                            </button>  
+                        </div>
+    
+                        <div class="node__bottom-line"></div>
+                        <div class="node__child">
+                            <div class="node">
+                                <div class="node__element" style="border:solid 1px #b73c42; border-radius:6px; cursor:default;" >
+                                        La réanimation cardio-pulmonaire (RCP) sera débitée sur placepus dans l'ambulance de SMUR et poursuivre en Réa <br>
+                                        Un cycle  de RCP est défini par les compressions thorasiques suivie par 2 ventilations
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="node__child">
+                            <div class="node">
+                                <div class="node__element"  >
+                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#10" style="display: inline-block;" >
+                                        Poursuite des gestes élementaires de survie                             
+                                    </button> 
+                                </div>
+                                +
+                                <div class="node__element" style="border:solid 1px #b73c42; border-radius:6px; cursor:default; "> 
+                                        Mise en place d'un scope en urgence 
+                                        <span style="color:#b73c42; font-size:25px ; font-weight:700;">!!</span>                                  
+                                </div>
+                                
+                            </div>
+                            <div class="line" style="position:absolute; right:29.5%; top:46%; width:39px;border-radius:0;padding:0"></div>
+
+                            <div class="node__element" style="position:absolute; right:0; top:43.3%; padding:0"> 
+                                                                
+                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#2" style="display: inline-block;" >
+                                    Éliminer une cause curable d'ACR                               
+                                </button> 
+                            </div>
+                        </div>
+                        <div class="node__child">
+                            <div class="node">
+                                <div class="node__element" style="border:solid 1px #b73c42; border-radius:6px; cursor:default;">
+                                          Analyse de rythmes
+                                </div>
+                            </div>
+                        </div>
+                        <div class="node__bottom-line" style="height: 25px; top:-40px;"></div>
+                        <div class="line" style="padding: 5px; width:900px"></div>
+                        <div class="node__children" style="padding:0;">
+                            <div class="node node--root">
+                                <div class="node__element">
+                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#4">
+                                        Asystolie                                
+                                    </button>       
+                                </div>
+                    
+                            </div>                       
+                            <div class="node" style="height: 25px; ">
+                                <div class="node__element__child">
+                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#5">
+                                           Dissociation électromagnétique                             
+                                    </button>       
+                                </div>
+                                
+                            </div>
+                            <div class="node">
+                                <div class="node__element__child">
+                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#6">
+                                          Fibrillation Ventriculaire et Tachycardie Ventriculaire                      
+                                    </button>       
+                                </div>
+                                
+                            </div>
+                            <div class="node">
+                                <div class="node__element__child">
+                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#7">
+                                        Tachycardies                                
+                                    </button>       
+                                </div>
+                    
+                            </div> 
+                            <div class="node">
+                                <div class="node__element__child">
+                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#8">
+                                        BAV Complet                                
+                                    </button>       
+                                </div>
+                    
+                            </div> 
+                            <div class="node node--root">
+                                <div class="node__element">
+                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#9">
+                                          Tosardes de pointe                             
+                                    </button>       
+                                </div>
+                            </div> 
+                            
+                        </div>
+                        <div class="node node--root" style="margin-top: 10px; width:300px" >
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#11">
+                                CAT si patient a pu ressuciter                            
+                            </button>  
+                        </div> 
+                    </div>
+                    
+                </div>
+                 
+            </div>
+    
+    
+    
+        <!-- MODALS -->
+    
+        <div class="modal fade p-5" id="1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+              <div class="modal-content ">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">État de mort apparente</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="display:flex;justify-content:center;">
+                    <p>
+                        x Ventilation absente ou anormale avec présence de « gasps ».
+                        <br> x Absence de réponse à la stimulation.
+                        <br> x Abolition du pouls fémoral et carotidien (recherche< 10 secondes).
+                        <br> x Hypotonie généralisée, perte des urines et de selles fréquente
+                    </p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade p-5" id="2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+              <div class="modal-content ">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Cause curable d'ACR</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="display:flex;justify-content:center;">
+                    <img src="../pics/Picture1-1.png" alt="">
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade p-5" id="4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+              <div class="modal-content ">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Asystolie</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="display:flex;justify-content:center;">
+                    <h6>
+                        • Tracé plat.
+                        <br> • Le CEE est inutile. <br>
+                        • SEUL MEDICAMENT EFFICACE: Adrénaline, injectée 1 mg par 1 mg IV, à répéter
+                        toutes les 3 à 5minutesjusqu'à retour à une hémodynamique spontanée.
+                        <br> • L'Adrenaline permet parfois de faire passer le patient en tachycardie ventriculaire ou
+                        fibrillation ventriculaire qui peut alors être défibrillé par CEE.
+                        <br>• L'asystolie survient rarement d'emblée. Elle complique Jeplus souvent un ACR avec no-Dow
+                        prolongéliéà une autre cause (TV, FV, BA Vcomplet, dissociation électromécanique, etc.).
+                        <br>• Ilfaut néanmoins rechercher une cause curable: hypoxie, hypothermie, hyper ou hypokaliémie,
+
+                    </h6>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade p-5" id="5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-xl ">
+              <div class="modal-content ">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Dissociation électromagnétique</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="display:flex;justify-content:center;">
+                   <p>
+                    • Persistance d'une activité cardiaque scopique sans efficacité circulatoire.
+                <br>    • Même prise en charge initiale que pour une asystolie.
+                <br>    Certaines étiologies doivent être évoquées, en fonction du type des complexes QRS et nécessitant
+                    un traitement spéc(fique:
+                <br>   <span style="color: #b73c42;">Si QRS larges:</span> 
+                <br>    x Hyperkaliémie = alcalinisation.
+                <br>    x Intoxication aux tricycliques = alcalinisation.
+                <br>    x Intoxication à la NIVAQUINF!P = alcalinisation + Valium® + Adrénaline®.
+                <br>   <span style="color: #b73c42;">Si QRS.ins:</span>
+                <br>    x Tamponnade liquidienne= drainage péricardique.
+                <br>   x Tamponnade gazeuse (pneumothorax)= drainage.
+                <br>   x Embolie pulmonaire massive = thrombolyse.
+                <br>   x Hypovolémie = remplissage.
+                <br>   x Hypothermie
+
+                   </p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade p-5" id="6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+              <div class="modal-content ">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Fibrillation Ventriculaire et Tachycardie Ventriculaire</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="display:flex;justify-content:center;">
+                    <p>
+                        • Le traitement repose sur le CHOC ELECTRIQUE EXTERNE qui doit être réalisé
+                        immédiatement+++ , dès que le scope a objectivé une FV.
+                       <br> • 1er CEE à 150 J avec défibrillateur biphasique.
+                       <br> • Aucune VVP ne doit être posée avant ce 1er CEE+++ .
+                      <br>  • Après ce 1er CEE, la RCP est poursuivie pendant 2minutes avant l'analyse rythmique
+                        suivante.
+                      <br>  • Si persistance de la FVITV après 2minutes de RCP: 2eme CEE à 150-360J avec
+                        défibrillateur biphasique.
+                      <br>  • Après ce 2eme  CEE, la RCP est poursuivie pendant 2 minutes avant L'analyse rythmique suivante.
+                     <br>   • Si persistance FV/TV: :3eme CEE à 150-360J avec défibrillateur biphasique.
+                     <br>   • Après ce :3eme CEE:
+                        La RCP est poursuivie pendant 2 minutes avant l'analyse rythmique suivante.
+                        Injection d'ADRENALINE 1 mg IVD toutes les 3 à 5 minutes.
+                        Injection d'amiodarone: 1 ampoule à 300 mg en bolus IV.
+                      <br>  • Après ce :3eme  CEE, la RCP est poursuivie pendant 2 minutes avant l'analyse rythmique
+                        suivante. L'ADRENALJNE est administrée toutes les 3 à 5 minutes.
+                       <br> • Et ainsi de suite... !!! avec alternance RCP-CEE-ADRENALINE jusqu'à la reprise
+                        d'une activité hémodynamique efficace ou à l'arrêt de la RCP avancée= décès.
+
+                    </p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade p-5" id="7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+              <div class="modal-content ">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Tachycardie</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="display:flex;justify-content:center;">
+                    <p>
+                        • Réflexe: Toutes tachycardies rapides sur ACR doit être choquée (quelle que soit son origine) !
+                       <br> • Si TV: prise en charge identique à celle de la FV.
+                        <br> • Si TdR supraventriculaires: n'entraînent quasiment jamais d'ACR. Elles peuvent entraîner des
+                        syncopes ou être mal tolérées hémodynamiquement. Leur prise en charge est détaillée dans
+                        l'item « Palpitations ».
+
+                    </p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade p-5" id="8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+              <div class="modal-content ">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Bloc auriculo-ventriculaire complet</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="display:flex;justify-content:center;">
+                    <p>
+                        • Coup de poing sternal, puis Isoprénaline qui permet d'accélérer la fréquence ventriculaire
+                        (5 ampoules à 0,2 mg diluées dans 250 cc de glucosé à 5%, débit à adapter à la fréquence
+                        cardiaque), dans l'attente de la mise en place d'un entraînement électrique percutané ou
+                        mieux d'une sonde d'entraînement électrosystolique endocavitaire.
+                    </p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade p-5" id="9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+              <div class="modal-content ">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Torsades de pointe</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="display:flex;justify-content:center;">
+                   <p>
+                    • Peuvent dégénérer enfibrillation ventriculaire 9 CEE siFV.
+                    <br> • Néanmoins, en l'absence de choc ou de FV, le traitement de la torsade de pointes repose sur la
+                    perfusion de sulfate de magnésium, la correction d'une hypokaliémie, l'Isoprénaline et la
+                    montée d'une SEES en urgence.
+                    </p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade p-5" id="10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+              <div class="modal-content ">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Gestes élementaires de survie</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="display:flex;justify-content:center;">
+                    <p>
+                        1-Poursuite de la ventilation
+                        <br> • Réalisée à l'aide d'un masque facial à oxygène pur avec ballon (respirateur manuel type Ambu).
+                      <br>  • Si l'ACR n'est pas rapidement réversible, on pratiquera une intubation orotrachéale
+                        permettant une ventilation mécanique.
+                      <br>  2-Poursuite du massage cardiaque externe
+                       <br> • Il doit être poursuivi tant qu'une activité cardiaque mécanique efficace n'a pas été rétablie
+                        (c'est-à-dire la présence d'un pouls spontané) +++.
+                       <br> • Eventuellement, une aide instrumentale peut être utile comme celle apportée par la « cardiopump » qui permet une décompression active.
+                    </p>
+                </div>
+              </div>
+            </div>
+            
+        </div>
+        <div class="modal fade p-5" id="11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+              <div class="modal-content ">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">CAT</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="display:flex;justify-content:center;">
+                   <img src="../pics/Picture1-2.png" alt="">
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
+            
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+      
+</body>
+</html>

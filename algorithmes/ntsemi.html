@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styletree.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="../scripttree.js"></script>
+    <title>UCV</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mb-5" style="box-shadow: 0 2px 2px -2px rgba(0,0,0,.2) ;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img style="width:80px" src="../pics/Screenshot 2023-04-03 at 21.57.21.png">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="d-flex" role="search">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="../algorithmes.html">Algorithmes</a>
+                    </li>                  
+                </ul>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <div class="container">
+        <div class="row">  
+            <div class="col-md-2"></div>
+            <div class="col-md-6">
+                <h1 style="display: flex; justify-content: center;">NTSEMI</h1>
+                <div class="auteur mt-4 mb-5">
+                    <h6>Auteur:</h6>
+                    <img src="../pics/nihal.jpeg">
+                    <p>Dr. Nihal Nakmouch</p>
+                </div>
+                <p> <strong>Crise aigue hypertensive :</strong> La mesure d’une pression de consultation > 180/110 mmHg définit une « Crise aiguë hypertensive », <br> 
+                    qui peut recouvrir 3 situations avec des prises en charge très différentes :<br>
+                    –Une HTA/ un effet blouse blanche ne nécessitant pas de traitement spécifique <br>
+                    –Une HTA chronique sévère (de grade 3) nécessitant une titration thérapeutique mensuelle en ambulatoire <br>
+                    –Une urgence hypertensive nécessitant une hospitalisation en urgence <br>
+                    En consultation, pour différencier ces 3 situations, il faut :<br>
+                    –Répéter la mesure plusieurs fois dans le cabinet, en mettant le patient au calme<br>
+                    --> Si la pression artérielle s’améliore spontanément, ça n’est pas une urgence hypertensive
+                </p>
+                <div class="tree" >
+                    <div class="node node--root">
+    
+                        <div class="node__element" style="border:solid 1px #b73c42; border-radius:6px; cursor:default;" >
+                                Suspicion d'une HTA
+                            
+                        </div>
+    
+                        <div class="node__bottom-line"></div>
+                        <div class="node__child">
+                            <div class="node">
+                                <div class="node__element">
+                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#1">
+                                        Mesure de la pression artérielle
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="node__child">
+                            <div class="node">
+                                <div class="node__element" style="border:solid 1px #b73c42; border-radius:6px; cursor:default;"> <span style="color:rgb(122, 122, 127)"> PA > 180 / 110 mmHg </span> <br>
+                                    Crise Aïgue Hypertensive
+                                </div>
+                            </div>
+                        </div>
+                        <div class="node__child">
+                            <div class="node">
+                                <div class="node__element">
+                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#2">
+                                        Associé à une atteinte des organes cibles ?   
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="node__bottom-line" style="height: 25px; top:-40px;"></div>
+                        <div class="line"></div>
+                        <div class="node__children" style="padding:0;">
+                            <div class="node node--root">
+                                <div class="node__element">
+                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#3">
+                                        <span style="color:rgb(172, 121, 121)">Non</span> <br>
+                                        Urgence hypertensive relative                                 
+                                    </button>       
+                                </div>
+                                <div class="node__child">
+                                    <div class="node">
+                                        <div class="node__element">
+                                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#4">
+                                                Prise en charge                                        
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                       
+                            <div class="node node--root">
+                                <div class="node__element">
+                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#5">
+                                        <span style="color:rgb(172, 121, 121)">Oui</span> <br>
+                                        Urgence hypertensive absolue                                 
+                                    </button>       
+                                </div>
+                                <div class="node__child">
+                                    <div class="node">
+                                        <div class="node__element">
+                                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#6">
+                                                Bilan et Prise en charge   
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    
+    
+        <!-- MODALS -->
+    
+        <div class="modal fade p-5" id="1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+              <div class="modal-content ">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Mesure de la pression artérielle</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="display:flex;justify-content:center;">
+                    <img src="../pics/Picture1.png" alt="">
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade p-5" id="2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+              <div class="modal-content ">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Mesure de la pression artérielle</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="display:flex;justify-content:center;">
+                    <img src="../pics/Picture2.png" alt="">
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade p-5" id="3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+              <div class="modal-content ">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Mesure de la pression artérielle</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="display:flex;justify-content:center;">
+                    <h6>
+                        Les patients se trouvant en urgence hypertensive relative peuvent 
+                        être asymptomatiques ou présenter des symptômes non spécifiques, 
+                        tels que céphalées, vertiges, nausées, anxiété ou douleurs 
+                        thoraciques (souvent atypiques). Parfois, un saignement de nez 
+                        se produit
+                    </h6>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade p-5" id="4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+              <div class="modal-content ">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Mesure de la pression artérielle</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="display:flex;justify-content:center;">
+                    <h6 class="mb-3">
+                        + Administration d’une substance orale d’action rapide <br>
+                        + Traitement de la douleur, de l’anxiété et des nausées <br>
+                        + Adaptation du traitement antihypertenseur à long terme <br>
+                        + Pas de traitement antihypertenseur parentéral nécessaire  <br>
+                        + Sortie du patient dès la régression des symptômes et l’atteinte d’une pression artérielle systolique inf a 180mmHg <br>
+                        + Contrôle de suivi dans un a sept jours <br>
+                        + Admission en unité de soins intensifs  <br>
+                        + Initiation d’un traitement antihypertenseur IV ( substance et cible de pression artérielle adaptées en fonction des atteintes des organes cibles ) <br>
+                        <img src="../pics/Picture5.png">
+                    </h6>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade p-5" id="5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-xl ">
+              <div class="modal-content ">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Mesure de la pression artérielle</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="display:flex;justify-content:center;">
+                    <img src="../pics/Picture3.png" alt="">
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade p-5" id="6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+              <div class="modal-content ">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Mesure de la pression artérielle</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="display:flex;justify-content:center;">
+                    <img src="../pics/Picture4.png" style="width:auto">
+                </div>
+              </div>
+            </div>
+        </div>
+            </div>
+            
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+      
+</body>
+</html>

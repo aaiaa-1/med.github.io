@@ -10,81 +10,367 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <script src="../scripttree.js"></script>
     <title>UCV</title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mb-5" style="box-shadow: 0 2px 2px -2px rgba(0,0,0,.2) ;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img style="width:80px" src="../pics/Screenshot 2023-04-03 at 21.57.21.png">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="d-flex" role="search">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="../algorithmes.html">Algorithmes</a>
+                    </li>                  
+                </ul>
+            </form>
+          </div>
+        </div>
+      </nav>
     <div class="container">
         <div class="row">  
-            <h1>AVCH</h1>
-            <p> <strong>Crise aigue hypertensive :</strong> La mesure d’une pression de consultation > 180/110 mmHg définit une « Crise aiguë hypertensive », qui peut recouvrir 3 situations avec des prises en charge très différentes :<br>
-                –Une HTA/ un effet blouse blanche ne nécessitant pas de traitement spécifique <br>
-                –Une HTA chronique sévère (de grade 3) nécessitant une titration thérapeutique mensuelle en ambulatoire <br>
-                –Une urgence hypertensive nécessitant une hospitalisation en urgence <br>
-                En consultation, pour différencier ces 3 situations, il faut :<br>
-                –Répéter la mesure plusieurs fois dans le cabinet, en mettant le patient au calme<br>
-                --> Si la pression artérielle s’améliore spontanément, ça n’est pas une urgence hypertensive
-            </p>
-            <div class="tree">
-                <div class="node node--root">
-                    <div class="node__element">AVCH</div>
-                    <div class="node__bottom-line"></div>
-                    <div class="node__child">
-                        <div class="node">
-                            <div class="node__element">Évaluation initiale</div>
+            <div class="col-md-2"></div>
+            <div class="col-md-6">
+                <h1 style="display: flex; justify-content: center;">AVCH</h1>
+                <div class="auteur mt-4 mb-5">
+                    <h6>Auteur:</h6>
+                    <img src="../pics/rawaa.jpeg" alt="">
+                    <p>Dr. Rawaa Ray</p>
+                </div>
+                <p> <strong>Accident vasculaire cérébral hémorragique  :</strong> 
+                    est un épisode de dysfonctionnement neurologique causé par la rupture 
+                    d’un vaisseau sanguin dans le tissu cérébral , l’espace sous-arachnoïdien 
+                    ou l’espace intraventriculaire 
+                </p>
+                <div class="tree" style="height: 700px;">
+                    <div class="node node--root">
+                        <div class="node__element"  style="border:solid 1px #b73c42; border-radius:6px; cursor:default;">AVCH</div>
+                        <div class="node__bottom-line"></div>
+                        <div class="node__child">
+                            <div class="node">
+                                <div class="node__element">
+                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#1">
+                                        Évaluation initiale
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="node__child">
-                        <div class="node">
-                            <div class="node__element">Étiologie</div>
+                        <div class="node__child">
+                            <div class="node">
+                                <div class="node__element">
+                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#2">
+                                        Étiologie
+                                    </button>
+                                    </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="node__child">
-                        <div class="node">
-                            <div class="node__element multi__child"> Examens complémentaires </div>
+                        <div class="node__child">
+                            <div class="node">
+                                <div class="node__element" style="border:solid 1px #b73c42; border-radius:6px; cursor:default;"> Examens complémentaires </div>
+                            </div>    
                         </div>
-                        
-                    </div>
-                    <div class="node__bottom-line"></div>
-                    <div class="node__children">
-                        <div class="node">
-                            <div class="node__element">Imagerie</div>
-                        </div>
-                        <div class="node">
-                            <div class="node__element multi__child">ECG</div>
-                            <div class="node__children">
-                                <div class="node">
-                                    <div class="node__element"> Traitement</div>
-                                    <div class="node__children">
-                                        <div class="node">
-                                            <div class="node__element"> Hemostatique</div>
-                                        </div>
-                                        <div class="node">
-                                            <div class="node__element"> Contrôle tensionnel optimal</div>
-                                        </div>
-                                        <div class="node">
-                                            <div class="node__element"> Mesures anti-œdemaeuse</div>
-                                        </div>
-                                        <div class="node">
-                                            <div class="node__element"> Rééducation</div>
-                                        </div>
-                                        <div class="node">
-                                            <div class="node__element"> Chirurgicale</div>
+                        <div class="node__bottom-line" style="height: 25px; top:-30px;"></div>
+                        <div class="line" style="width: 750px; padding:10px;"></div>
+                        <div class="node__children" style="padding:0;">
+                            <div class="node node--root">
+                                <div class="node__element" style="margin:0;padding:0;">
+                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#3">
+                                        Imagerie
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="node" style="margin:0">
+                                <div class="node__element">
+                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#4">
+                                        ECG
+                                    </button>
+                                </div>
+                                <div class="node__children" style="padding:0; margin-top:17px;">
+                                    <div class="node" style="margin:0" >
+                                        <div class="node__element" > 
+                                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#6">
+                                                Traitement
+                                            </button>
+                                            </div>
+                                            <div class="node__bottom-line" style="height: 25px; top:-30px;"></div>
+                                            <div class="line" style="width:650px; padding:5px;"></div>
+                                        <div class="node__children" style="position: absolute; top:100px; padding:0 ">
+                                            <div class="node">
+                                                <div class="node__element" style=""> 
+                                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#7">
+                                                        Hemostatique
+                                                    </button>
+                                                    </div>
+                                            </div>
+                                            <div class="node">
+                                                <div class="node__element"> 
+                                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#8">
+                                                        Contrôle tensionnel optimal
+                                                    </button>
+                                                    </div>
+                                            </div>
+                                            <div class="node">
+                                                <div class="node__element"> 
+                                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#9">
+                                                        Mesures anti-œdemaeuse
+                                                    </button>
+                                                    </div>
+                                            </div>
+                                            <div class="node">
+                                                <div class="node__element"> 
+                                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#10">
+                                                        Rééducation
+                                                    </button>
+                                                    </div>
+                                            </div>
+                                            <div class="node">
+                                                <div class="node__element"> 
+                                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#11">
+                                                        Chirurgicale
+                                                    </button>
+                                                    </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="node node--root">
+                                <div class="node__element">
+                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#5">
+                                        Biologie
+                                    </button>
+                                    </div>
+                            </div>
                         </div>
-                        <div class="node">
-                            <div class="node__element">Biologie</div>
-                        </div>
+    
+    
+    
+        <!-- MODALS -->
+    
+        <div class="modal fade p-5" id="1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+              <div class="modal-content ">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Évaluation Initiale</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" >
+                    <p>
+                        ➢ Evaluation initiale des voies aériennes , de la respiration et de la circulation <br>
+                        ➢ Examen neurologique pour détecter des déficits neurologiques localisées et
+                        évaluer la gravité de l’AVC <br>
+                        ➢ La fréquence et le rythme cardiaques, la pression artérielle, la température, la
+                        saturation en oxygène, la glycémie au point d'intervention et la présence de crises convulsives doivent être évalués <br>
+                        ➢ Les patients dont le niveau selon l’échelle de coma de Glasgow est en baisse ou est égal ou inférieur à 8 doivent être rapidement examinés pour déterminer si une assistance respiratoire par intubation endotrachéale est requise<br>
+                        ➢ Les patients présentant un niveau de conscience réduit, des changements pupillaires ou d’autres signes d’hernie doivent disposer de manœuvres de temporisation pour gérer l’élévation présumée de la pression intracrânienne (PIC), telles que l’hyperventilation temporaire et un agent hyperosmotique (p. ex., mannitol ou solution saline à 3 %)<br>
+                        ➢ L'utilisation ou non d'anticoagulants ainsi que le moment où la dernière dose a été prise doivent être demandés et notés<br>
+                        ➢ Examen clinique :<br>
+                        ▪ Déficit neurologique non systématisé à un territoire artériel<br>
+                        ▪ Signes d’HTIC : céphalées , nausées , photophobie ,...<br>
+                        ▪ Hyperthermie<br>
+                        ▪ Perte de conscience brève ou coma<br>
+                        ▪ Signes de décérébration : extension et rigidité des membres<br>
+                    </p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade p-5" id="2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+              <div class="modal-content ">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Étiologie</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" >
+                    <img src="../pics/img1.png" style="width:700px">
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade p-5" id="3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+              <div class="modal-content ">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Imagerie</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" >
+                    <h6>
+                        ➢ TDM cérébral : confirme l’hémorragie
+                        <img src="../pics/img9.png" style="width:750px">
+                        ➢ IRM : pour quantifier l’œdème cérébral et préciser l’étiologie <br>
+                        ➢ Angio-TDM : nécessaire pour éliminer une malformation artério- veineuse ou un anévrisme si la localisation atypique ou sujet non
+                        connu hypertendu <br>
+                        ➢ Angiographie : <br>
+                        <img src="../pics/img10.png" >
+                        <img src="../pics/img11.png" >
+                    </h6>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade p-5" id="4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+              <div class="modal-content ">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">ECG</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" >
+                    <h6 class="mb-3">
+                        Un saignement sous-arachnoïdien et/ou intracérébral ou un PRES syndrome (Posterior-reversible encephalopathy syndrome en rapport avec une hypertension artérielle sévère) peuvent influencer le tonus vagal et agir sur le système nerveux autonome jusqu’à modifier la repolarisation ventriculaire. Les trois anomalies ECG les plus communes mais inconstantes sont :
+                        <br> - une bradycardie sinusale, 
+                        <br> - des ondes T inversées larges et profondes (spécialement en V2-V4)
+                        <br> - un allongement de l’intervalle QT
+                        <img src="../pics/img6.png" style="width:750px">
+                        <img src="../pics/img7.png" style="width:750px">
+                        Plus rarement, on peut observer :
+                        - des ondes R amples <br>
+                        - des ondes U proéminentes <br>
+                        - des ondes T cérébrales (ondes T inversées, QTc prolongé grandes U, grandes ondes R dans le
+                        cadre d’une hypertension/hémorragie intracrânienne) <br>
+                        - un sus-décalage du segment ST diffus <br>
+                        <img src="../pics/img8.png" style="width:750px">
+                    </h6>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade p-5" id="5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-xl ">
+              <div class="modal-content ">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Biologie</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" >
+                    <img src="../pics/img4.png" alt="">
+                    <img src="../pics/img5.png" alt="">
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade p-5" id="6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+              <div class="modal-content ">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Traitement</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../pics/Picture4.png" style="width:auto">
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade p-5" id="7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+              <div class="modal-content ">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Hemostatique</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../pics/img3.png" alt="">
+                    <h6>
+                        ➢ Les antivitamines K doivent être arrêtés et antagonisés : L'administration en urgence de facteurs X, IX, VIl et Il est recommandée . On l'utilisera à la dose de 25 Ul/kg en bolus de 3 min si I'INR est inconnu; si I'INR est connu, il est conseillé de se référer aux recommandations d'utilisation du produit. Son action est rapide mais il faut l'associer à la vitamine K (10 mg) pour éviter l'ascension secondaire de I'INR à la fin de l'efficacité des facteurs de coagulation exogènes. Elle sera administrée per os ou lentement en intraveineux afin d'éviter une réaction anaphylactique lors d'administration en bolus
+                        <br> ➢ Si I'AVC survient au décours de !'administration d'héparine fractionnée ou non, une antagonisation par le sulfate de protamine à la dose d'une unité par unité d'héparine circulante (la dose sera adaptée à la demi-vie du produit et à l'horaire de la dernière injection). L’injection doit ici aussi se faire lentement sur 5 min cette stratégie n'est toutefois que partiellement efficace en cas d'utilisation d'héparine de bas poids moléculaire
+                        <br> ➢ Les antiagrégants plaquettaires seront également arrêtés. Des plaquettes doivent être transfusées si une chirurgie est prévue à la dose classique d' une unité par 10 kg de poids corporel. En I ‘absence de preuve suffisante et en raison des difficultés d'approvisionnement en plaquettes, la transfusion systématique de plaquettes n'est pas recommandée
+                    </h6>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade p-5" id="8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+              <div class="modal-content ">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Contrôle tensionnel Optimal</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>
+                        Abaissement de la tension artérielle systolique < 140 mm Hg
+                    </h6>
+                    
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade p-5" id="9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+              <div class="modal-content ">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Mesures anti-œdemaeuse</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>
+                        position 1⁄2 assise , restriction hydrique,...
+                    </h6>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade p-5" id="10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+              <div class="modal-content ">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Rééducation</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>
+                        - Dans les 24 à 48 heures après l’AVCH <br>
+                        - Risque de mortalité élevé après 14 jours si mobilisation agressive
+                    </h6>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade p-5" id="11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+              <div class="modal-content ">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Chirurgicale</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <img src="../pics/img2.png">
+                    </div>
+                    <div>
+                      <h6>
+                        ➢ Indications à la craniotomie : <br>
+                        o Altération de la conscience o Hydrocéphalie<br>
+                        • Hématome cérébelleux dont le volume dépasse les 15 mL avec détérioration neurologique ,<br>
+                        o compressiondutronccérébral<br>
+                        o hydrocéphalie d’obstruction ventriculaire<br>
+                        ➢ Indication à l’évacuation mini-invasive par endoscopie ou aspiration :<br>
+                        o Hématome dont le volume dépasse les 20 à 30 mL avec un score de Glasgow
+                        compris entre 5 et 12<br>
+                    </h6>  
                     </div>
                     
                 </div>
+              </div>
             </div>
         </div>
     </div>
-    
-    
+            
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+      
 </body>
 </html>
