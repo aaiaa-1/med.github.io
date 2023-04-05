@@ -38,8 +38,7 @@
         </div>
       </nav>
     <div class="container">
-        <div class="row">  
-            <div class="col-md-2"></div>
+
             <div class="col-md-6">
                 <h1 style="display: flex; justify-content: center;">AVCI</h1>
                 <div class="auteur mt-4 mb-3">
@@ -61,12 +60,12 @@
                     –Répéter la mesure plusieurs fois dans le cabinet, en mettant le patient au calme<br>
                     --> Si la pression artérielle s’améliore spontanément, ça n’est pas une urgence hypertensive
                 </p>
-                <div class="tree" >
-                    <div class="node node--root">
-    
+                <div class="tree" style="width: 1500px;">
+                    
+                    <div class="node node--root" >
+                        
                         <div class="node__element" style="border:solid 1px #b73c42; border-radius:6px; cursor:default;" >
-                                Suspicion d'une HTA
-                            
+                                AVC                   
                         </div>
     
                         <div class="node__bottom-line"></div>
@@ -74,7 +73,7 @@
                             <div class="node">
                                 <div class="node__element">
                                     <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#1">
-                                        Mesure de la pression artérielle
+                                       Signe d'alerte et FDR
                                     </button>
                                 </div>
                             </div>
@@ -82,61 +81,159 @@
                         
                         <div class="node__child">
                             <div class="node">
-                                <div class="node__element" style="border:solid 1px #b73c42; border-radius:6px; cursor:default;"> <span style="color:rgb(122, 122, 127)"> PA > 180 / 110 mmHg </span> <br>
-                                    Crise Aïgue Hypertensive
+                                <div class="node__element" > 
+                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#2">
+                                        Évaluer le degré d'urgence
+                                    </button> 
                                 </div>
                             </div>
                         </div>
+
                         <div class="node__child">
                             <div class="node">
-                                <div class="node__element">
-                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#2">
-                                        Associé à une atteinte des organes cibles ?   
-                                    </button>
+                                <div class="node__element" style=" border:solid 1px #b73c42; border-radius:6px; cursor:default;">
+                                    PEC avant confirmation diagnostique
                                 </div>
                             </div>
                         </div>
                         <div class="node__bottom-line" style="height: 25px; top:-40px;"></div>
-                        <div class="line"></div>
-                        <div class="node__children" style="padding:0;">
+                        <div class="line" style="width :730px; padding:5px; position:absolute;top:24%;right:38%"></div>
+                        <div class="node__child" style="padding:0;">
                             <div class="node node--root">
                                 <div class="node__element">
                                     <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#3">
-                                        <span style="color:rgb(172, 121, 121)">Non</span> <br>
-                                        Urgence hypertensive relative                                 
-                                    </button>       
-                                </div>
-                                <div class="node__child">
-                                    <div class="node">
-                                        <div class="node__element">
-                                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#4">
-                                                Prise en charge                                        
-                                            </button>
-                                        </div>
-                                    </div>
+                                          ce que l'équipe médicale ne doit pas faire                            
+                                    </button>        
                                 </div>
                             </div>                       
                             <div class="node node--root">
-                                <div class="node__element">
-                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#5">
-                                        <span style="color:rgb(172, 121, 121)">Oui</span> <br>
-                                        Urgence hypertensive absolue                                 
-                                    </button>       
+                                <div class="node__element" >
+                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#4">
+                                        ce que l'équipe médicale doit faire                            
+                                  </button>                         
                                 </div>
                                 <div class="node__child">
                                     <div class="node">
                                         <div class="node__element">
-                                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#6">
-                                                Bilan et Prise en charge   
-                                            </button>
+                                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#5">
+                                                Confirmation diagnostique
+                                           </button>
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="node__bottom-line" style="height: 26px;position:relative;top:-15px"></div>
+                                <div class="line" style="padding: 5px; width:514px; position:absolute;top:14%;right:14.6%"></div>
+                                <div class="node__child">
+                                    <div class="node">
+                                        <div class="node__element" style=" border:solid 1px #b73c42; border-radius:6px; cursor:default;">
+                                                AVCI <  4h30
+                                        </div>
+                                        <div class="node__child">
+                                            <div class="node">
+                                                <div class="node__element">
+                                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#6">
+                                                        Thrombolyse IV
+                                                   </button> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="node__bottom-line" style="height: 32px;position:relative;top:-15px"></div>
+                        <div class="line" style="padding: 5px; width:343px; border-radius:0;position:absolute;top:18.7%;right:26.5%"></div>
+                        <div class="node__children" style="padding:0;">
+                                                 
+                            <div class="node node--root" style="height: 25px; ">
+                                <div class="node__element__child" style=" border:solid 1px #b73c42; border-radius:6px; cursor:default; text-align:center; padding:9px">
+                                    Si abscence d'occlusion artérielle proximale
+                                </div>
+                            </div>
+
+                            <div class="node__bottom-line" style="height:102px; position:absolute; right:76%; top:29.7%"></div>
+                            <div class="line" style="position:absolute; width:260px ;right:38.1%; top:44.3%;border-radius:0;padding:0"></div>
+
+                            <div class="node node--root">
+                                <div class="node__element__child" style=" border:solid 1px #b73c42; border-radius:6px; cursor:default; text-align:center; padding:10px">
+                                        Si présence d'occlusion artérielle proximale                                
+                                </div>
+
+                                <div class="node__child">
+                                    <div class="node">
+                                        <div class="node__element" style=" border:solid 1px #b73c42; border-radius:6px; cursor:default;">
+                                            Thrombectomie
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="node__child">
+                                    <div class="node">
+                                        <div class="node__element">
+                                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#7">
+                                                TT anti-agrégant
+                                           </button> 
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="node__child">
+                                    <div class="node">
+                                        <div class="node__element">
+                                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#8">
+                                                TT anti-coagulant
+                                            </button> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="node__child">
+                                    <div class="node">
+                                        <div class="node__element">
+                                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#9">
+                                                Surveillance et TT anti-HTA
+                                            </button> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="node__child">
+                                    <div class="node">
+                                        <div class="node__element">
+                                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#10">
+                                                PEC des troubles hydroélectrolytique et <br> Hyper Glycémie
+                                            </button> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="node__child">
+                                    <div class="node">
+                                        <div class="node__element">
+                                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#11">
+                                                PEC des troubles de déglutition et <br> nutrition
+                                            </button> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            
+                            
+                            
+                        </div>
+                        </div>
+                                    
+                                    
+                                    <div class="node">
+                                        <div class="node__element" style=" border:solid 1px #b73c42; border-radius:6px; cursor:default;">
+                                                AVCI > 4h30 <br>
+                                                ou contre Indication à la Thrombolyse
+                                        </div>
+                                        <div class="line" style="position:absolute; width:274px ;right:50%; top:35%;border-radius:0;padding:0"></div>
+                                        <div class="node__bottom-line" style="height:205px; position:absolute; right:50%; top:15%"></div>
+                                        <div class="line" style="position:absolute; width:269px ;right:50%; top:44.3%;border-radius:0;padding:0"></div>
+            
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                        
+                    
+                    
                 </div>
-            </div>
+            
     
     
     
@@ -146,11 +243,23 @@
             <div class="modal-dialog modal-dialog-scrollable modal-lg ">
               <div class="modal-content ">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Mesure de la pression artérielle</h1>
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Les signes d'alerte évoquant un AVC</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body" style="display:flex;justify-content:center;">
-                    <img src="../pics/Picture1.png" alt="">
+                   <p>
+                        – faiblesse ou engourdissement soudain de la face, du bras et/ou de la jambe d’un côté du corps, – diminution ou perte de la vision, en particulier d’un œil, <br>
+                        – perte soudaine de la parole ou difficulté pour parler ou comprendre ce qui est dit, – mal de tête sévère, inhabituel, sans cause apparente, <br>
+                        – instabilité de la marche inexpliquée ou chute soudaine, en particulier en asso- ciation avec l’un des symptômes précédents. <br>
+                        Ces symptômes peuvent témoigner d’un AVC ischémique ou hémorragique, ou même d’une hémorragie sous-arachnoïdienne. <br>
+                        FDR : <br>
+                        • Les maladies cardiaques, dont plus particulièrement l'ACFA, <br>
+                        • La sténose carotidienne <br>
+                        • L'AIT <br>
+                        • L'utilisation de contraceptifs oraux. le risque est essentiellement lié à l’effet synergique avec le tabac <br>
+                        • L'inflammation et l'infection : l'augmentation de la protéine C réactive double le risque d'AVC ischémique <br>
+                        • L'hyperhomocystéinémie : le risque est doublé pour un taux > 121μmmol/l (1).                  <br>  
+                    </p>
                 </div>
               </div>
             </div>
@@ -159,11 +268,20 @@
             <div class="modal-dialog modal-dialog-scrollable modal-lg ">
               <div class="modal-content ">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Mesure de la pression artérielle</h1>
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">évaluer le degré d’urgence</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body" style="display:flex;justify-content:center;">
-                    <img src="../pics/Picture2.png" alt="">
+                <div class="modal-body">
+                    <p>
+                        un AVC est dit grave si un ou plusieurs de ces éléments sont retrouvés : (3)<br> 
+                        - un NIHSS élevé ≥ 11 <br>
+                        -un Glasgow ≤ 7 <br>
+                        - le territoire vasculaire : tronc basilaire (AVC pontique), artère cérébrale moyenne (AVC sylvien malin, mauvais pronostic à 3 mois en termes de mortalité et dehandicap) <br>
+                        - le type d'AVC : ischémique ou hémorragique (de plus mauvais pronostic que l'AVC ischémique en terme de mortalité à 1 mois <br>
+                        - le recours à une ventilation mécanique <br>
+                    </p>
+                    <img src="../pics/Picture4-1.png" style="width:750px">
+                    <img src="../pics/Picture4-2.png" style="width:750px">
                 </div>
               </div>
             </div>
@@ -172,17 +290,16 @@
             <div class="modal-dialog modal-dialog-scrollable modal-lg ">
               <div class="modal-content ">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Mesure de la pression artérielle</h1>
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Ce que l’équipe médicale ne doit pas faire</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body" style="display:flex;justify-content:center;">
-                    <h6>
-                        Les patients se trouvant en urgence hypertensive relative peuvent 
-                        être asymptomatiques ou présenter des symptômes non spécifiques, 
-                        tels que céphalées, vertiges, nausées, anxiété ou douleurs 
-                        thoraciques (souvent atypiques). Parfois, un saignement de nez 
-                        se produit
-                    </h6>
+                    <p>
+                        – ne pas entreprendre de traitement antihypertenseur, sauf en présence d’une décompensation cardiaque,( L’hypertension artérielle (HTA) doit être respectée à la phase aiguë d’un AVC.)<br>
+                        – ne pas utiliser de corticoïdes, <br>
+                        – ne pas utiliser d’héparine,<br>
+                        – ne pas faire d’injection intramusculaire.<br>
+                    </p>                
                 </div>
               </div>
             </div>
@@ -191,21 +308,18 @@
             <div class="modal-dialog modal-dialog-scrollable modal-lg ">
               <div class="modal-content ">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Mesure de la pression artérielle</h1>
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Ce que l’équipe médicale doit faire </h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body" style="display:flex;justify-content:center;">
-                    <h6 class="mb-3">
-                        + Administration d’une substance orale d’action rapide <br>
-                        + Traitement de la douleur, de l’anxiété et des nausées <br>
-                        + Adaptation du traitement antihypertenseur à long terme <br>
-                        + Pas de traitement antihypertenseur parentéral nécessaire  <br>
-                        + Sortie du patient dès la régression des symptômes et l’atteinte d’une pression artérielle systolique inf a 180mmHg <br>
-                        + Contrôle de suivi dans un a sept jours <br>
-                        + Admission en unité de soins intensifs  <br>
-                        + Initiation d’un traitement antihypertenseur IV ( substance et cible de pression artérielle adaptées en fonction des atteintes des organes cibles ) <br>
-                        <img src="../pics/Picture5.png">
-                    </h6>
+                   <p>
+                    – s’assurer de l’absence de menace vitale immédiate, auquel cas l’orientation doit se faire vers un milieu de réanimation, <br>
+                    – d’évaluer le niveau de vigilance, l’importance du déficit (existence ou non d’une atteinte de l’étage céphalique, possibilité de motricité des membres supérieurs et inférieurs contre résistance ou contre pesanteur), et de coter le déficit à l’aide du score NIH. <br>
+                    – préciser le début des troubles neurologiques à la minute près (par le patient lui-même ou par un témoin), ainsi que les traitements antérieurs et actuels. Cette information est nécessaire en vue d’une indication potentielle de fibrinolyse, <br>
+                    – mesurer la pression artérielle en décubitus strict, <br>
+                    – organiser le transfert immédiat vers une unité neurovasculaire. <br>
+                    Les paramètres vitaux doivent être régulièrement surveillés, en particulier la pression artérielle. La
+                    liberté des voies aériennes supérieures doit être assurée. Si une perfusion IV est nécessaire, il est recommandé d’utiliser du sérum physiologique. Une insulinothérapie est indiquée chez les patients dont la glycémie est ≥ 10 mmol/L.</p>
                 </div>
               </div>
             </div>
@@ -213,12 +327,25 @@
         <div class="modal fade p-5" id="5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable modal-xl ">
               <div class="modal-content ">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Mesure de la pression artérielle</h1>
+                <div class="modal-header">La confirmation diagnostique De l’AVC</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body" style="display:flex;justify-content:center;">
-                    <img src="../pics/Picture3.png" alt="">
+                <div class="modal-body" >
+                    <p>
+                        L’imagerie cérébrale (IRM, scanner) est nécessaire sans délai pour affirmer le diagnostic d’AVC et préciser sa nature ischémique ou hémorragique. <br>
+                        •SCANNER SANS INJECTION : les signes précoces d’ischémie cérébrale (signe de l’artère sylvienne dense, effacement des sillons corticaux, effacement de l’insula,
+                         émoussement du noyau lenticulaire du même côté de l’ischémie en cas d’atteinte sylvienne) sont inconstants et d’interprétation difficile
+                    </p>
+                    <img src="../pics/Picture4-3.png" >
+                    <p>
+                        •L’IRM :
+                        - la diffusion : permet de visualiser l'infarctus de manière très précoce (quelques
+                        minutes) sous la forme d'une hyperintensité <br>
+                        -T2/Flair : permet de visualiser l'infarctus cérébral récent au bout de quelques heures et permet également l'identification des AVC plus anciens et des anomalies de la substance blanche (leucoencéphalopathie) <br>
+                        -T2* ou écho de gradient : permet de visualiser toute lésion hémorragique intraparenchymateuse <br>
+                        - 3D-ToF (time of flight) : séquence d'angio-IRM réalisée sans injection de produit de contraste pour l'étude des branches du polygone de Willis et la visualisation d'une éventuelle occlusion artérielle <br>
+                    </p>
+                    <img src="../pics/Picture4-4.png" style="width: 750px;">
                 </div>
               </div>
             </div>
@@ -227,16 +354,101 @@
             <div class="modal-dialog modal-dialog-scrollable modal-lg ">
               <div class="modal-content ">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Mesure de la pression artérielle</h1>
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Thrombolyse</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body" style="display:flex;justify-content:center;">
-                    <img src="../pics/Picture4.png" style="width:auto">
+                <div class="modal-body" >
+                    <p>
+                        Un traitement thrombolytique par rt-PA (AMM européenne depuis 2002) par voie veineuse est recommandé chez les patients ayant un AVC ischémique à condition que le traitement puisse être instauré dans les 3 heures suivant l’apparition des symptômes d’AVC et qu’il n’existe pas de contre- indication à ce traitement. La dose de rt-PA préconisée est de 0,9 mg/kg, dose maximale 90 mg, 10 % en bolus et 90 % en perfusion d’une heure
+                    </p>
+                    <img src="../pics/Picture4-5.png" style="width: 750px;">
                 </div>
               </div>
             </div>
         </div>
+        <div class="modal fade p-5" id="7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+              <div class="modal-content ">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">anti-agrégants plaquettaires</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="display:flex;justify-content:center;">
+                    <p>
+                        -Un traitement antiplaquettaire par aspirine (à la posologie de 160 à 300 mg/j) est recommandé dès que possible après un AVC ischémique, sauf si un traitement thrombolytique est envisagé <br>
+                        - si allergie à l’aspirine : Clopidogrel 75 mg/j
+                    </p>
+                </div>
+              </div>
             </div>
+        </div>
+        <div class="modal fade p-5" id="8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+              <div class="modal-content ">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">les anticoagulants</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="display:flex;justify-content:center;">
+                    <p>
+                        • Anticoagulants à dose préventive (HBPM ; HNF) : pour prévenir les complications thromboemboliques ; débutés après un délai minimum de 24h en cas d'hémorragie cérébrale <br>
+                        • Anticoagulants à dose curative : en cas de découverte d'ACFA et d'un AVC ischémique ; parfois démarrés avec un délai pour les AVC avec un NIHSS élevé (risque important de transformation hémorragique ) <br> 
+                    </p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade p-5" id="9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+              <div class="modal-content ">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Surveillance et TT HTA</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="display:flex;justify-content:center;">
+                    <p>-Surveillance des paramètres vitaux <br>
+                        La pression artérielle doit être régulièrement surveillée de façon d’autant plus rapprochée que l’AVC est récent. Un ECG doit être réalisé dès le début de la prise en charge. Une surveillance continue par cardioscope au cours des 48 premières heures de l’AVC permet de dépister une arythmie paroxystique ou une autre pathologie cardiaque associée. La fonction respiratoire et la température corporelle doivent être surveillées.
+                        <br>● Pression artérielle <br>
+                        Il est recommandé de respecter l’hypertension artérielle contemporaine de la phase aiguë d’un AVC ischémique, sauf dans les cas suivants :
+                        <br> >>> Un traitement thrombolytique est envisagé. Dans ce cas, la pression artérielle doit être abaissée en dessous de 185/110 mmHg avant de débuter la thrombolyse
+                        <br> >>> Un traitement thrombotlyique n’est pas envisagé :
+                        <br>– persistance d’une pression artérielle supérieure à 220/120 mmHg,
+                        <br>– complication de l’HTA menaçante à court terme (ex.: dissection aortique, insuffisance cardiaque décompensée, encéphalopathie hypertensive).
+                        E<br>n cas de traitement de l’hypertension artérielle, il est recommandé d’utiliser préférentiellement la perfusion intraveineuse pour un ajustement tensionnel précis. L’utilisation préférentielle de l’urapidil ou du labétalol ou de la nicardipine est recommandée, en évitant les doses de charge. La pression artérielle doit être abaissée progressivement et maintenue en dessous de 220/120 mmHg, en surveillant l’état neurologique afin de dépister une aggravation du déficit.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade p-5" id="10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+              <div class="modal-content ">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">PEC des troubles hydro-électrolytiques et hyperglycémie</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="display:flex;justify-content:center;">
+                    <p>L’équilibre hydro-électrolytique et glycémique doit être surveillé et les anomalies corrigées. Si une perfusion IV est nécessaire, il est recommandé d’utiliser du sérum physiologique plutôt que du soluté glucosé.
+                       <br> En l’absence d’étude définissant un seuil d’intervention, il est recommandé de traiter par insulinothérapie les patients dont la glycémie est > 10 mmol/L.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade p-5" id="11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+              <div class="modal-content ">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Troubles de la déglutition et nutrition</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="display:flex;justify-content:center;">
+                    <p>Les troubles de la déglutition doivent être recherchés systématiquement avant la première alimentation, car ils exposent au risque de pneumopathie d’inhalation. En cas de troubles de la déglutition, l’alimentation orale doit être interrompue et remplacée par une alimentation par sonde nasogastrique, adaptée à l’état nutritionnel.
+                       <br> En l’absence d’alimentation orale, un apport calorique adéquat sera fourni par voie entérale à partir de la 48e heure.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
             
             <footer class="container-fluid bg-grey pt-5 mt-5">
                 <div class="container">
