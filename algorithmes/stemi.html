@@ -15,86 +15,151 @@
 </head>
 <body>
     <div class="container">
-        <div class="row">  
+        <div class="row"> 
+            <div class="col-md-2"></div>
+            <div class="col-md-6"> 
             <h1>STEMI</h1>
             <div class="auteur mt-4 mb-5">
                 <h6>Auteur:</h6>
                 <img src="../pics/boy.jpeg" alt="">
                 <p>Dr. Yasser Megane</p>
             </div>
-            <p> <strong>Crise aigue hypertensive :</strong> La mesure d’une pression de consultation > 180/110 mmHg définit une « Crise aiguë hypertensive », qui peut recouvrir 3 situations avec des prises en charge très différentes :<br>
-                –Une HTA/ un effet blouse blanche ne nécessitant pas de traitement spécifique <br>
-                –Une HTA chronique sévère (de grade 3) nécessitant une titration thérapeutique mensuelle en ambulatoire <br>
-                –Une urgence hypertensive nécessitant une hospitalisation en urgence <br>
-                En consultation, pour différencier ces 3 situations, il faut :<br>
-                –Répéter la mesure plusieurs fois dans le cabinet, en mettant le patient au calme<br>
-                --> Si la pression artérielle s’améliore spontanément, ça n’est pas une urgence hypertensive
+            <p> <strong>SCA :</strong> 
+                + Douleur thoracique, Rétro sternale en barre, constrictive, très violente, irradiant dans les avant-bras et la mâchoire. 
+                 <br> + Elle est différente de la douleur d'angor stable par son caractère : PROLONGE (supérieur à 20 minutes) TRINITRO-RESIST ANT Souvent plus VIOLENT Elle survient habituellement au REPOS
+                
             </p>
-            <div class="tree">
+            <div class="tree" style="width:1100px;">
                 <div class="node node--root">
-                    <div class="node__element">SCA ST+</div>
+                    <div class="node__element">
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#1">
+                            SCA ST+                               
+                        </button> 
+                    </div>
                     <div class="node__bottom-line"></div>
                     <div class="node__child">
                         <div class="node">
-                            <div class="node__element">Premier contact medical</div>
+                            <div class="node__element">
+                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#2">
+                                    Premier contact medical                              
+                                </button>
+                            </div>
                         </div>
                     </div>
                     <div class="node__child">
                         <div class="node">
-                            <div class="node__element">Evaluation initiale</div>
+                            <div class="node__element">
+                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#3">
+                                    Evaluation initiale                             
+                                </button>
+                                </div>
+                        </div>
+                        <div class="line" style="position:absolute; right:36.8%; top:15.5%; width:34px;border-radius:0;padding:0"></div>
+
+                        <div class="node__element" style="position:absolute; right:6.51%; top:13.6%; padding:0"> 
+                                                            
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#extra" style="display: inline-block;" >
+                                Éliminer diagnostic differentiel                             
+                            </button> 
                         </div>
                     </div>
                     <div class="node__child">
                         <div class="node">
-                            <div class="node__element "> ECG 12 dérivation initiale <br> si pas de diagnostic <br> 
-                            répeter 5-10min aprés</div>
+                            <div class="node__element "> 
+                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#4">
+                                    ECG 12 dérivation initiale <br> si pas de diagnostic <br> 
+                                    répeter 5-10min aprés                            
+                                </button>
+                            </div>
                         </div>
                     </div>
                     <div class="node__child">
                         <div class="node">
-                            <div class="node__element">SCA ST+ confirmé</div>           
+                            <div class="node__element" style="border:solid 1px #b73c42; border-radius:6px; cursor:default;">SCA ST+ confirmé</div>           
                         </div>
                     </div>
-                    <div class="node__child">
+                    <div class="node__child" >
                         <div class="node">
-                            <div class="node__element">Commencer TTT medical</div> 
-                            <div class="node__bottom-line"></div>
-                            <div class="node__children">
+                            <div class="node__element">
+                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#5">
+                                    Commencer TTT médical                           
+                                </button>
+                                </div> 
+                                <div class="node__bottom-line" style="height: 25px; top:-40px;"></div>
+                                <div class="line" style="padding: 5px; width:600px"></div>
+                            
+                            <div class="node__children" style="float:left; width:835px">
                                 <div class="node">
-                                    <div class="node__element multi__child">y'a t-il indication KKKKKK</div>           
+                                <div class="node__element multi__child">
+                                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#6">
+                                            Y'a t-il une indication a la reperfusion myocardique                       
+                                        </button>
+                                        </div>           
                                 </div>
                                 <div class="node">
-                                    <div class="node__element">TTT post SCA</div>           
+                                    <div class="node__element">
+                                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#10">
+                                            
+                                            TTT post SCA                         
+                                        </button>
+                                    </div>           
                                 </div>
-                                <div class="node">
-                                    <div class="node__element ">Comment révasculariser</div>   
+                                <div class="node" >
+                                    <div class="node__element ">
+                                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#11">
+                                            Comment révasculariser                         
+                                        </button>
+                                        </div>   
                                     <div class="node__child ">
                                         <div class="node">
-                                            <div class="node__element multi__child">KKKKKKKKKKK</div>
-                                            <div class="node__bottom-line"></div> 
-                                            <div class="node__children">
+                                            <div class="node__element multi__child" style="border:solid 1px #b73c42; border-radius:6px; cursor:default;">
+                                                Coronarographie + Angioplastie < 120min <br>
+                                                une fois le diagnostique est posé
+                                            </div>
+                                             
+                                            <div class="node__bottom-line" style="height: 25px; top:-40px;"></div>
+                                            <div class="line" style="padding: 5px; width:320px;"></div>
+                                            <div class="node__children" style="position:relative; right:10%">
+                                                
                                                 <div class="node">
-                                                    <div class="node__element"><span style="color:brown">Non</span> <br>
-                                                    Thrombolyse</div>
-                                                    <div class="node__bottom-line"></div>
-                                                    <div class="node__children">
+                                                    <div class="node__element">
+                                                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#8">
+                                                            <span style="color:brown">Non</span> <br>
+                                                            Thrombolyse                          
+                                                        </button>
+                                                        </div>
+                                                        <div class="node__bottom-line" style="height: 25px; top:-40px;"></div>
+                                                        <div class="line" style="padding: 5px; width:200px"></div>
+                                                    <div class="node__children" style="position:relative; right:7%">
                                                         <div class="node">
-                                                            <div class="node__element">Echec</div>
+                                                            <div class="node__element" style="border:solid 1px #b73c42; border-radius:6px; cursor:default;">Echec</div>
                                                             <div class="node__child">
                                                                 <div class="node">
-                                                                    <div class="node__element multi__child">Angioplastie de sauvetage en urgence</div>           
+                                                                    <div class="node__element" >
+                                                                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#12">
+                                                                            Angioplastie de sauvetage en urgence                       
+                                                                        </button>
+                                                                        </div>           
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="node">
-                                                            <div class="node__element">Succès</div>
+                                                            <div class="node__element">
+                                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#9">
+                                                                    Succés                         
+                                                                </button>
+                                                                </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 
                                                 <div class="node">
-                                                    <div class="node__element"><span style="color:brown">Oui</span> <br>
-                                                    Angioplastie </div>
+                                                    <div class="node__element">
+                                                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#7">
+                                                            <span style="color:brown">Oui</span> <br>
+                                                            Angioplastie                       
+                                                        </button>
+                                                         </div>
                                                 </div>
                                             </div>          
                                         </div>
@@ -107,7 +172,264 @@
             </div>
         </div>
     </div>
+</div>
+
+<!-- MODALS -->
+
+<div class="modal fade p-5" id="1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+      <div class="modal-content ">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">SCA ST+</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="display:flex;justify-content:center;">
+            <img src="../pics/Picture2-1.png" alt="">
+        </div>
+      </div>
+    </div>
+</div>
+<div class="modal fade p-5" id="2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+      <div class="modal-content ">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">1 er contact médical </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="display:flex;justify-content:center;">
+            <p>est défini par le 1 er contact entre le patient et un intervenant (médecin ou infirmier) avec réalisation et interprétation de l'ECG.</p>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="modal fade p-5" id="3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+      <div class="modal-content ">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Évaluation initial </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" >
+            <p>Anamnése, accés veineuse, ECG 12 dérivation, prise de sang, O2 TTT avec objectif 94%</p>
+            <img src="../pics/Picture2-2.png" alt="">
+        </div>
+      </div>
+    </div>
+</div>
+<div class="modal fade p-5" id="4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+      <div class="modal-content ">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">ECG initial </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <h5>Définition académique d’un STEMI</h5>
+            <img src="../pics/Picture2-4.jpg" alt="">
+            <img src="../pics/Picture2-5.png" alt="">
+        </div>
+      </div>
+    </div>
+</div>
+<div class="modal fade p-5" id="5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+      <div class="modal-content ">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">TTT médical </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="display:flex;justify-content:center;">
+            <img src="../pics/Picture2-6.png" style="width:800px">
+        </div>
+      </div>
+    </div>
+</div>
+<div class="modal fade p-5" id="6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+      <div class="modal-content ">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Indication a la reperfusion</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" >
+            <img src="../pics/Picture2-7.png" style="width: 800px;">
+        </div>
+      </div>
+    </div>
+</div>
+<div class="modal fade p-5" id="7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+      <div class="modal-content ">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Angioplastie</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="display:flex;justify-content:center;">
+            <img src="../pics/Picture2-8.png" style="width:800px">
+        </div>
+      </div>
+    </div>
+</div>
+<div class="modal fade p-5" id="8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+      <div class="modal-content ">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">CI THROMBOLYSE </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="display:flex;justify-content:center;">
+            <img src="../pics/Picture2-9.png" style="width: 750px;">
+        </div>
+      </div>
+    </div>
+</div>
+<div class="modal fade p-5" id="9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+      <div class="modal-content ">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Succés </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="display:flex;justify-content:center;">
+            <img src="../pics/Picture2-10.png" style="width: 800px;">
+        </div>
+      </div>
+    </div>
+</div>
+<div class="modal fade p-5" id="10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+      <div class="modal-content ">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">TTT post SCA </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="display:flex;justify-content:center;">
+            <img src="../pics/Picture2-11.png" style="width: 800px;">
+        </div>
+      </div>
+    </div>
+</div>
+<div class="modal fade p-5" id="11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+      <div class="modal-content ">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Révascularisation</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="display:flex;justify-content:center;">
+            <p>
+                Préférer également la revascularisation myocardique par angioplastie primaire si :
+                <br> - Choc
+                <br> - ACR ressuscité 
+                <br> - Complications mécaniques - OAP sévère
+                <br> - Doute diagnostique Quel que soit le délai si Cl à la thrombolyse
+
+            </p>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="modal fade p-5" id="12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+      <div class="modal-content ">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Angioplastie de sauvetage </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" >
+            <img src="../pics/Picture2-12.png" style="width: 750px;">
+            <img src="../pics/Picture2-13.png" style="width: 750px;">
+            <img src="../pics/Picture2-14.png" style="width: 750px;">
+            <img src="../pics/Picture2-15.png" style="width: 750px;">
+            <img src="../pics/Picture2-16.png" style="width: 750px;">
+        </div>
+      </div>
+    </div>
+</div>
+<div class="modal fade p-5" id="extra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+      <div class="modal-content ">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Eliminer diagnostic differentiel</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="display:flex;justify-content:center;">
+            <img src="../pics/Picture2-3.png" alt="">
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+    <footer class="container-fluid bg-grey pt-5 mt-5">
+        <div class="container">
+           <div class="row">
+              <div class="col-md-6">
+                 <div class="row">
+                    <div class="col-md-6 ">
+                       <div class="logo-part">
+                          <img src="../pics/logo.jpeg" class="w-50 logo-footer" >
+                        
+                          <p>Use this tool as test data for an automated system or find your next pen</p>
+                       </div>
+                    </div>
+                    <div class="col-md-6 px-4">
+                       <h6> About Company</h6>
+                       <p>But horizontal lines can only be a full pixel high.</p>
+                       <a href="#" class="btn-footer"> More Info </a><br>
+                       <a href="#" class="btn-footer"> Contact Us</a>
+                    </div>
+                 </div>
+              </div>
+              <div class="col-md-6">
+                 <div class="row">
+                    <div class="col-md-6 px-4">
+                       <h6> Help us</h6>
+                       <div class="row ">
+                          <div class="col-md-6">
+                             <ul>
+                                <li> <a href="#"> Home</a> </li>
+                                <li> <a href="#"> About</a> </li>
+                                <li> <a href="#"> Service</a> </li>
+                                <li> <a href="#"> Team</a> </li>
+                                <li> <a href="#"> Help</a> </li>
+                                <li> <a href="#"> Contact</a> </li>
+                             </ul>
+                          </div>
+                          <div class="col-md-6 px-4">
+                             <ul>
+                                <li> <a href="#"> Cab Faciliy</a> </li>
+                                <li> <a href="#"> Fax</a> </li>
+                                <li> <a href="#"> Terms</a> </li>
+                                <li> <a href="#"> Policy</a> </li>
+                                <li> <a href="#"> Refunds</a> </li>
+                                <li> <a href="#"> Paypal</a> </li>
+                             </ul>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="col-md-6 ">
+                       <h6> Newsletter</h6>
+                       <form class="form-footer my-3">
+                          <input type="text"  placeholder="your email address" name="search">
+                          <input type="button" value="Go" >
+                       </form>
+                       <p>That's technology limitation of LCD monitors</p>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+        </footer> 
     
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
