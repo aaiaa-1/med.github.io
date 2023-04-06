@@ -71,7 +71,7 @@ h1{
 
 .aboutus img {
     width: 400px;
-    
+    border-color: #3c3c3c;
 }
 
 
@@ -79,9 +79,6 @@ h1{
 
 
 /* SECTION MEMBERS */
-.members{
-    margin-top: 300px;
-}
 .members img{
     width: 100px;
     border-radius: 50%;
