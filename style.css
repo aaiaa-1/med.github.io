@@ -199,8 +199,7 @@ text-decoration:none;
 }
 a:hover {
 text-decoration: none;
-color:#b73c42 !important;
-
+color:#b73c42;
 }
 .logo-part {
 border-right: 1px solid grey;
@@ -208,4 +207,7 @@ height: 100%;
 }
 .active{
     color:#b73c42 !important;
+}
+.card a:hover{
+    color:#F8F7F3;
 }
