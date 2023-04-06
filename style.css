@@ -48,21 +48,25 @@ h1{
     {
         background-image: url(pics/pic2.jpeg);
     }
-    25%
+    20%
     {
         background-image: url(pics/pic3.jpeg);
     }
-    50%
+    40%
     {
         background-image: url(pics/pic4.jpeg);
     }
-    75%
+    60%
     {
         background-image: url(pics/pic5.jpeg);
     }
-    100%
+    80%
     {
         background-image: url(pics/pic6.jpeg);
+    }
+    100%
+    {
+        background-image: url(pics/pic7.jpeg);
     }
 }
 
